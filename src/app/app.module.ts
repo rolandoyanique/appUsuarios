@@ -9,7 +9,7 @@ import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { FooterComponent } from './dashboard/footer/footer.component';
 import { LisUsuariosComponent } from './dashboard/lis-usuarios/lis-usuarios.component';
 import { CardUsuarioComponent } from './dashboard/lis-usuarios/card-usuario/card-usuario.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { CardUsuarioComponent } from './dashboard/lis-usuarios/card-usuario/card
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

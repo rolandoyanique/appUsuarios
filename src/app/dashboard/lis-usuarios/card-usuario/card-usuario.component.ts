@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-usuario',
   templateUrl: './card-usuario.component.html',
   styleUrls: ['./card-usuario.component.css']
 })
-export class CardUsuarioComponent {
-  imgURL="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
+export class CardUsuarioComponent implements OnInit{
+  @Input() user:any;
+  imgURL!:string;
+  name!:string;
+  email!:string;
+ constructor(){
+  
+ }
+ngOnInit():void{
+  this.name=this.user.name;
+  this.email=this.user.email;
+  //this.imgURL=this.user.;
+  
+}
 }
