@@ -8,6 +8,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { FooterComponent } from './dashboard/footer/footer.component';
 import { LisUsuariosComponent } from './dashboard/lis-usuarios/lis-usuarios.component';
+import { CardUsuarioComponent } from './dashboard/lis-usuarios/card-usuario/card-usuario.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LisUsuariosComponent } from './dashboard/lis-usuarios/lis-usuarios.comp
     LayoutComponent,
     NavbarComponent,
     FooterComponent,
-    LisUsuariosComponent
+    LisUsuariosComponent,
+    CardUsuarioComponent
   ],
   imports: [
     BrowserModule,
