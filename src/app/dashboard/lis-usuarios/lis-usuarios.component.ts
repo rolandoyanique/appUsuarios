@@ -7,13 +7,14 @@ import { UsuarioService } from '../../services/usuario.service'
 })
 export class LisUsuariosComponent implements OnInit{
   listUsuarios:any[]=[];
+  flagSpinner:boolean=true;
     constructor(private usuarioService:UsuarioService){}
   ngOnInit(): void {
   this.getUsuarios();  
   }
   getUsuarios():void{
     this.usuarioService.getUsuarios().subscribe(data=>{
-      console.log(data);
+      this.flagSpinner=false;
       this.listUsuarios=data;
     })
   }

@@ -10,6 +10,7 @@ import { FooterComponent } from './dashboard/footer/footer.component';
 import { LisUsuariosComponent } from './dashboard/lis-usuarios/lis-usuarios.component';
 import { CardUsuarioComponent } from './dashboard/lis-usuarios/card-usuario/card-usuario.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UsuarioComponent } from './dashboard/usuario/usuario.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     FooterComponent,
     LisUsuariosComponent,
-    CardUsuarioComponent
+    CardUsuarioComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
