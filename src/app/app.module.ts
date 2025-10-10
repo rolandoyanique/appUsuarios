@@ -11,6 +11,7 @@ import { LisUsuariosComponent } from './dashboard/lis-usuarios/lis-usuarios.comp
 import { CardUsuarioComponent } from './dashboard/lis-usuarios/card-usuario/card-usuario.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuarioComponent } from './dashboard/usuario/usuario.component';
+import { LoadingComponent } from './dashboard/loading/loading.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { UsuarioComponent } from './dashboard/usuario/usuario.component';
     FooterComponent,
     LisUsuariosComponent,
     CardUsuarioComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
